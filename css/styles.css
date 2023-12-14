@@ -279,8 +279,7 @@ background-color:var(--five-title-color);
     background-position: center;
     justify-content: center;
     display: flex;
-    background-position: 50% 50%;
-
+    background-size:auto;
 }
 
 .header-main {
