@@ -275,11 +275,18 @@ background-color:var(--five-title-color);
 .first-section {
     padding: 188px 0;
     background-color:  var(--second-title-color); 
-    background-image: url(/image/office-people.jpg);
-    background-position: center;
+   
+   
+    background-repeat: no-repeat;
     justify-content: center;
     display: flex;
-    background-size:auto;
+    background-size: cover;
+    background-position: center;
+    background-image:
+    linear-gradient( rgba(46, 47, 66, 0.70),
+    rgba(46, 47, 66, 0.70)),
+    url(../image/office-people.jpg);
+    
 }
 
 .header-main {
