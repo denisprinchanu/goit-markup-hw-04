@@ -390,7 +390,9 @@ background-color:var(--five-title-color);
 
 
 
-
+.main-icon {
+   
+}
 
 .second-section {
     padding-top: 120px;
@@ -442,6 +444,9 @@ background-color:var(--five-title-color);
     background: #fff;
     width: calc((100% - 72px)/4);
     border-radius: 0px 0px 4px 4px; 
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+
 }
 
 
@@ -539,19 +544,18 @@ background: #fff;
 
 
 
-.portfolio .project-card{
+ .project-card{
     width: calc((100% - 48px) / 3);
 }
 
-/* .container-four{
-    margin-left: auto;
-    margin-right:auto;
-    max-width: 1158px;
-    width: 1158px;
-    padding: 32px 16px;
-    border: 1px solid #e7e9fc;
+.project-card:hover {
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);  
 }
- */
+
+
+
+
+
 
 .project-contant {
 padding: 32px 16px; 
@@ -673,3 +677,48 @@ border-top: none;
     letter-spacing: 0.32px;
     max-width: 264px;
   }
+
+
+
+
+/* =========== ADD Funcion ICON================ */
+
+
+
+
+.socials-items {
+    
+    gap:24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.socials-elem {
+ width: 40px;
+ height: 40px;
+}
+
+.socials-link {
+    width: 100%;
+    height: 100%;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F4F4FD;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+    background-color: #404BBF;
+}
+
+
+
+
+.socials-icon {
+    fill:currentColor;
+}
