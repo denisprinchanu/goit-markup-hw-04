@@ -146,6 +146,7 @@ background-color:var(--five-title-color);
 
 
 .header-logo  {
+    position: relative;
     color: var(--IRIS, #4D5AE5);
     font-family: Raleway;
     font-size: 18px;
@@ -193,6 +194,28 @@ background-color:var(--five-title-color);
 
 
 }
+
+.nav-text-header.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: block; 
+    width: 100%;
+    height: 4px;    
+    border-radius: 2px;
+    background-color: var(--OCEAN, #404BBF);
+
+}
+
+.nav-text-header.active {
+    color: #404BBF ;
+
+
+
+
+
+}
+
 
 
 
@@ -386,21 +409,32 @@ background-color:var(--five-title-color);
 
 
 
-/*  =================================== section 2 ============================== */
+/*  =================================== section 2  SPDT============================== */
+
+
+/* 
+
+.main-icon
+{
+position:absolute;
+top:-50px;
+left:0;
+} */
 
 
 
-.main-icon {
-   
-}
+
+
 
 .second-section {
     padding-top: 120px;
     padding-bottom: 120px;
+  
 }
 
 .lists {
     width: calc((100% - 72px) / 4);
+   /* position: relative; */
 }
 
 
@@ -555,7 +589,28 @@ background: #fff;
 
 
 
+.project-card-text {
+    position: relative;
+}
 
+.overlay {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+
+    color: var(--CLOUD, #F4F4FD);
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 1.50; /* 150% */
+    letter-spacing: 0.32px;
+}
 
 .project-contant {
 padding: 32px 16px; 
