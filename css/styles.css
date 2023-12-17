@@ -161,7 +161,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     margin-right: 76px;
     padding: 24px 0;
-    transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  
 
 }
 
@@ -177,7 +177,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     line-height: 21px; /* 116.667% */
     letter-spacing: 0.54px;
     text-transform: uppercase;
-    transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    
     display: flex;
 
 
@@ -286,6 +286,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-weight: 400;
     line-height: 24px; /* 150% */
     letter-spacing: 0.32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -828,7 +829,7 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .socials-elem-footer {
     width: 40px;
     height: 40px;
-    transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  
    }
    
 
@@ -857,7 +858,7 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .socials-elem {
  width: 40px;
  height: 40px;
- transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+ 
 }
 
 .socials-link {
@@ -868,9 +869,8 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #F4F4FD;
-    
-    transition:background-color 300ms  cubic-bezier(0.4, 0, 0.2, 1);
+    color: #F4F4FD;   
+    transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .socials-link:hover,
@@ -883,7 +883,7 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .socials-icon {
     fill:currentColor;
-    transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    
 }
 
 
