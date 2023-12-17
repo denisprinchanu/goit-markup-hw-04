@@ -610,7 +610,7 @@ background: #fff;
 }
 
 
-..project-card-text:hover {
+.project-card-text:hover {
     transform:translateY(0%);
 }
 
