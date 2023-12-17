@@ -95,6 +95,7 @@ list-style: none;
     align-items: center;
     flex-shrink: 0;
     border-bottom: 1px solid #e7e9fc;
+    box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08); 
 }
 
 .header-container {
@@ -136,7 +137,7 @@ letter-spacing: 0.04em;
 color: var(--six-title-color);
 font-family: "Roboto", sans-serif;
 background-color:var(--five-title-color);
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 
@@ -192,8 +193,9 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    
     align-items: center; 
     display: block;
-    padding: 24px 0 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 24px 0;
+    transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position:relative;
 }
 
 .nav-text-header.active::after {
@@ -201,6 +203,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: absolute;
     bottom: -1px;
     
+    left: 0;
     display: block; 
     width: 100%;
     height: 4px;    
@@ -250,7 +253,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color:var(--second-title-color);
     display: flex;
     align-items:center; 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   
     
@@ -299,18 +302,22 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 188px 0;
     background-color:  var(--second-title-color); 
    
-   
+    /* max-width: 1440px;  */
     background-repeat: no-repeat;
     justify-content: center;
     display: flex;
     background-size: cover;
     background-position: center;
-    background-image:
-    linear-gradient( rgba(46, 47, 66, 0.70),
-    rgba(46, 47, 66, 0.70)),
-    url(../image/office-people.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpg); 
     
 }
+
+
+.hero-container {
+    max-width: 1440px;
+}
+
+
 
 .header-main {
     font-size: 56px;
@@ -416,17 +423,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 /*  =================================== section 2  SPDT============================== */
 
 
-/* 
-
-.main-icon
-{
-position:absolute;
-top:-50px;
-left:0;
-} */
-
-
-
 
 
 
@@ -470,6 +466,15 @@ left:0;
 }
 
 
+.main-wrapper {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    height: 112px; 
+    background-color: #f4f4fd; 
+    border-radius: 4px; 
+    margin-bottom: 8px; 
+}
 
 
 
@@ -600,7 +605,16 @@ background: #fff;
 .project-card-text {
     position: relative;
     overflow: hidden;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
+
+
+..project-card-text:hover {
+    transform:translateY(0%);
+}
+
+
 
 .overlay {
     position: absolute;
@@ -612,7 +626,7 @@ background: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px;
+    padding: 40px 32px; 
 
     color: var(--CLOUD, #F4F4FD);
     font-family: Roboto;
@@ -622,7 +636,8 @@ background: #fff;
     background-color: var(--IRIS, #4D5AE5);
 
     transform: translateY(100%);
-    transition: transform 500ms ease-in;
+    
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -722,6 +737,7 @@ border-top: none;
     width: 1158px;
     margin: 0 auto;
     display: flex;
+    align-items: baseline;
   }
 
  .footer-right{
@@ -767,26 +783,79 @@ border-top: none;
     max-width: 264px;
   }
 
+  .footer-social {
+    color: var(--WHITE, #FFF);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.32px;
+    margin-bottom: 16px;
+}
+
+.socials-items-footer {
+    
+    gap: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.socials-link-footer:hover,
+.socials-link-footer:focus {
+    background-color:  #31d0aa;
+}
+
+.socials-link-footer {
+    width: 100%;
+    height: 100%;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F4F4FD;
+    
+    transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.socials-elem-footer {
+    width: 40px;
+    height: 40px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+   }
+   
+
+
+   .socials-icon-footer {
+    fill:currentColor;
+}
 
 
 
-/* =========== ADD Funcion ICON================ */
+/* =========== ADD Funcion ICON SOCIAL ICON================ */
 
 
 
 
 .socials-items {
     
-    gap:24px;
+    gap: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 16px;
+    margin-top: 8px
+    
 }
 
 .socials-elem {
  width: 40px;
  height: 40px;
+ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .socials-link {
@@ -812,18 +881,6 @@ border-top: none;
 
 .socials-icon {
     fill:currentColor;
-}
-
-.footer-social {
-    color: var(--WHITE, #FFF);
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px; /* 150% */
-    letter-spacing: 0.32px;
-   
-
 }
 
 
