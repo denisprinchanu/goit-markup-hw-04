@@ -550,16 +550,40 @@
             </div>  
         </div>    
               
-       
 
-
-
-
-
-                <button type="submit">Send form</button>
-            </form>
-
+        <div class="form-wrapped">
+            <label class="form-label" for="user_message" ></label>
+            <textarea 
+            name="user_message" 
+            id="user_message" 
+            rows="4" 
+            placeholder="Text input"
+            class="form-messeage"></textarea>
         </div> 
+
+        <label class="form-agreement">
+                <input class="checkbox visually-hidden" 
+                type="checkbox" 
+                name="usr_agreement" 
+                value="false"/>
+            <span class="form-agreement-checkbox">
+                <svg class="form-agreement-icon" width="10" height="8">
+                    <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+            </span>
+            I accept the terms and conditions of the <a class="form-agreement-link" href=""> Privacy Policy</a>
+        </label>
+
+
+        <div>
+                <button type="button" class="form-btn">Send</button>
+            </form>
+        </div>
+        
+
+        </div>
+     
+
     </div>
 
 
